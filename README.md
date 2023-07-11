@@ -1,6 +1,6 @@
 # Redesign PLM CRS
 
-This website has no backend and is simply a front end. By clicking the login button, the user can access the website without having to enter their username or password. Additionally, this website already includes a permanent record of students as an illustration of the website's layout.
+This website has no backend and is simply a front end. By clicking the login button, the user can access the website without having to enter their username or password. Additionally, this website already includes a permanent record of student as an illustration of the website's layout.
 
 **Here is the link of the website:** https://rizzapardales.github.io/Redesign_PLM_CRS/
 
