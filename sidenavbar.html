@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLM CRS</title>
+    <link rel="stylesheet" href="side.css">
+    <link rel="icon" href="img/plmlogo.png" />
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#schedule" class="active"><span class="step">Step 1 </span> <br> View Schedule</a>
+        <a href="#assessment"><span class="step">Step 2</span> <br> View Assessment</a>
+        <a href="#register"><span class="step">Step 3 </span> <br> Register</a>
+        <a href="#registration-form"><span class="step">Step 4</span> <br> View Registration <br> Form</a>
+        <a href="home.html" id="back">Back</a>
+        <a href="index.html" id="logout">Logout</a>
+    </div>
+
+    <div class="heading">
+        <img src="img/plmlogo.png" alt="">
+
+        <div class="subtext">
+            <p class="yellow">Pamantasan ng Lungsod ng Maynila</p>
+            <p>University of the City of Manila</p>
+        </div>
+
+        <div class="subtext1">
+            <p><span class="student-no">Logged as Student No.</span> 1234567</p>
+            <p>Today is <span id="date"></span></p>
+        </div>
+    </div>
+
+    <hr class="horizontal-line">
+      
+    <div class="content">
+        <div id="schedule" class="tab-content active"> 
+            <div class="label-container">
+                <h1>Class Schedule</h1>
+            </div>
+            <table>
+                <tr>
+                  <th>Class</th>
+                  <th>Section</th>
+                  <th>Schedule</th>
+                  <th>Credits</th>
+                </tr>
+                <tr>
+                  <td class="bg">Calculus 1 - CET 0111</td>
+                  <td class="bg">1</td>
+                  <td class="bg">M 5:00p-6:30p F2F  Field, Th 5:00p-6:30p LecSyncOnline Field</td>
+                  <td class="bg">3</td>
+                </tr>
+                <tr>
+                  <td>General Chemistry (lec) - CET 0114</td>
+                  <td>1</td>
+                  <td>M 11:30a-1:00p LecSyncOnline Field, Th 11:30a-1:00p F2F Field</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="bg">General Chemistry (lab) - CET 0114.1</td>
+                  <td class="bg">1</td>
+                  <td class="bg">Th 1:00p-4:00p F2F GEE 307</td>
+                  <td class="bg">1</td>
+                </tr>
+                <tr>
+                  <td>Introduction to Computer Human Interaction (lec) - EIT 0121</td>
+                  <td>1</td>
+                  <td>W 7:00a-8:00a LecSyncOnline Field, S 7:00a-8:00a F2F Comp Lab 2</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td class="bg">Introduction to Computer Human Interaction (lab) - EIT 0121.1A</td>
+                  <td class="bg">1</td>
+                  <td class="bg">S 8:00a-11:00a LecSyncOnline Field, S 7:00a-8:00a F2F Comp Lab 2</td>
+                  <td class="bg">1</td>
+                </tr>
+                <tr>
+                  <td>Discrete Mathematics - EIT 0121</td>
+                  <td>1</td>
+                  <td>W 1:00p-2:30p F2F GCA 307, S 1:00p-2:30p LecSyncOnline Field</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td class="bg">Web Systems Technology (lec) - EIT 0123</td>
+                  <td class="bg">1</td>
+                  <td class="bg">W 5:00p-6:00p F2F Field, 5:00p-6:00p LecSyncOnline Field</td>
+                  <td class="bg">2</td>
+                </tr>
+                <tr>
+                    <td>Web Systems Technology (lab) - EIT 0123.1</td>
+                    <td>1</td>
+                    <td>W 6:00p-9:00p F2F Comp Lab 3</td>
+                    <td>1</td>
+                  </tr>
+                <tr>
+                    <td class="bg">Great Books - GTB 121</td>
+                    <td class="bg">7</td>
+                    <td class="bg">W 11:30a-1:00p F2F GCA 307, S 11:30a-1:00p LecSyncOnline Field</td>
+                    <td class="bg">3</td>
+                </tr>
+                <tr>
+                    <td>Intermidiate Programming (lec) - ICC 0103</td>
+                    <td>4</td>
+                    <td>M 7:00a-8:00a F2F Comp Lab 4, Th 7:00a-8:00a LecSyncOnline Field</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td class="bg">Intermidiate Programming (lab) - ICC 0103.1</td>
+                    <td class="bg">4</td>
+                    <td class="bg">M 8:00a-11:00a F2F Comp Lab 2</td>
+                    <td class="bg">1</td>
+                </tr>
+                <tr>
+                    <td>National Service Training Program 2 - (Civic Welfare Trainig Service 2) - NSTP4</td>
+                    <td>9</td>
+                    <td>Su 1:00p-4:00p Blended Field</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td class="bg">Physical Activities Towards Health and Fitnedd 2 (Exercise-based Fitness Activities) - PATHFIT 2</td>
+                    <td class="bg">46</td>
+                    <td class="bg">F 1:00p-4:00p Blended Field</td>
+                    <td class="bg">2</td>
+                </tr>
+              </table>
+        </div>
+
+        <div id="assessment" class="tab-content">
+            <div class="text">
+                <p>Select Semester:</p> 
+            </div>
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <button type="submit">Submit</button>
+              </form>
+
+              
+        <div class="main-content">
+            <div class="card-content">
+        <div class="assess-content">
+            <div class="assess-head">
+                <h3>Tuition Fee</h3>
+            </div>
+
+            <div class="assess-container">
+                <div class="assess-flex">
+                    <div class="assess-card">
+                        <p class="red">Description</p>
+                        <p>Tuition Fee(24.00 units)</p>
+                    </div>
+
+                    <div class="assess-card">
+                        <p>Amount</p>
+                        <p>7032.00</p>
+                        <p class="red">7032.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+      
+
+
+          <div class="assess-content1">
+            <div class="miss-head">
+                <h3>Miscellaneous Fee</h3>
+            </div>
+
+            <div class="miss-container">
+                <div class="miss-flex">
+                    <div class="miss-card">
+                        <p class="red">Description</p>
+                        <p>Cultural Activity</p>
+                        <p>Library Fee</p>
+                        <p>Medical/Dental Fee</p>
+                        <p>Guidance Fee</p>
+                        <p>Athletic Fee with PE</p>
+                        <p>Student Welfare</p>
+                        <p>Registration Fee</p>
+                    </div>
+
+                    <div class="miss-card">
+                        <p>Amount</p>
+                        <p>74.00</p>
+                        <p>732.00</p>
+                        <p>293.00</p>
+                        <p>146.00</p>
+                        <p>293.00</p>
+                        <p>74.00</p>
+                        <p>74.00</p>
+                        <p class="red">1,686.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="card-content">
+          <div class="assess-content2">
+            <div class="lab-head">
+                <h3>Laboratory Fee</h3>
+            </div>
+
+            <div class="lab-container">
+                <div class="lab-flex">
+                    <div class="lab-card">
+                        <p class="red">Description</p>
+                        <p>All Other Subjects with Laboratory</p>
+                        <p>Computer Subject with Hands-On/Thesis</p>
+                    </div>
+
+                    <div class="lab-card">
+                        <p>Amount</p>
+                        <p>438.00</p>
+                        <p>1755.00</p>
+                        <p class="red">2,193.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="assess-content3">
+            <div class="other-head">
+                <h3>Other Fee</h3>
+            </div>
+
+            <div class="other-container">
+                <div class="other-flex">
+                    <div class="other-card">
+                        <p class="red">Description</p>
+                        <p>NSTP</p>
+                        <p>Development Fund</p>
+                        <p>Ang Pamantasan Fee</p>
+                        <br>
+                        <p class="red">Total Amount</p>
+                    </div>
+
+                    <div class="other-card">
+                        <p>Amount</p>
+                        <p>330.00</p>
+                        <p>146.00</p>
+                        <p>50.00</p>
+                        <p class="red">526.00</p>
+                        <p class="red">11,437.00</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="butt">
+            <button class="button1" type="submit">Save a <br> Copy</button>
+            <button class="button2"><span class="span-but">Your Status: <br> Paying: <br></span> Covered by CHED Unifast (RA 10931)</button>
+        </div>
+          
+        </div>
+
+          
+
+        <div id="register" class="tab-content">
+            <div class="register-container">
+                <h1>Please save a copy or print your Student Enrollment Record (SER) in STEP4to be officially registered or enrolled. Start of classes will be on February 13, 2023.</h1>
+            </div>
+        </div>
+
+        <div id="registration-form" class="tab-content">
+            <div class="reg-flex">
+            <div class="reg-card">
+            <div class="reg-maincon">
+            <div class="regform-container">
+                <img class="img-crs" src="img/crs.png" alt="">
+            </div>
+        </div>
+    </div>
+        
+    <div class="reg-card">
+        <div class="reg-but">
+            <button class="regregbut">Save a <br> Copy</button>
+            <h2>Note: Always save <br> a copy of your <br> SER.</h2>
+        </div>
+    </div>
+
+
+    </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var sidebarLinks = document.querySelectorAll('.sidebar a');
+            var tabContents = document.querySelectorAll('.tab-content');
+    
+            sidebarLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+    
+                    var target = this.getAttribute('href').substring(1);
+    
+                    tabContents.forEach(function(content) {
+                        content.classList.remove('active');
+                    });
+    
+                    document.getElementById(target).classList.add('active');
+    
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                    });
+    
+                    this.classList.add('active');
+                });
+            });
+    
+            var dateElement = document.getElementById('date');
+            var currentDate = new Date();
+    
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = currentDate.toLocaleDateString(undefined, options);
+    
+            dateElement.textContent = formattedDate;
+    
+            // Event listener for the back button
+            var backButton = document.getElementById('back');
+            backButton.addEventListener('click', function() {
+                window.location.href = "home.html";
+            });
+    
+            // Event listener for the logout button
+            var logoutButton = document.getElementById('logout');
+            logoutButton.addEventListener('click', function() {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+      
+</body>
+</html>

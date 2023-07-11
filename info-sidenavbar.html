@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLM CRS</title>
+    <link rel="stylesheet" href="info.css">
+    <link rel="icon" href="img/plmlogo.png" />
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-con">
+        <a href="#profile" class="active">View Profile</a>
+        <a href="#grades">View Grades</a>
+        <a href="#password">Change My <br> Password</a>
+        <a href="home.html" id="back">Back</a>
+        <a href="index.html" id="logout">Logout</a>
+    </div>
+    </div>
+
+    <div class="heading">
+        <img src="img/plmlogo.png" alt="">
+
+        <div class="subtext">
+            <p class="yellow">Pamantasan ng Lungsod ng Maynila</p>
+            <p>University of the City of Manila</p>
+        </div>
+
+        <div class="subtext1">
+            <p><span class="student-no">Logged as Student No.</span> 1234567</p>
+            <p>Today is <span id="date"></span></p>
+        </div>
+    </div>
+
+    <hr class="horizontal-line">
+      
+    <div class="content">
+        <div id="profile" class="tab-content active"> 
+            <div class="profilemain-container">
+                <div class="profilered-container">
+                    <div class="profile-flex">
+                        <div class="profile-card">
+                            <h1>View Your Profile</h1>
+                            <p class="main-text">Your college shall be determined from the degree program indicated here. If the degree program is erraneous, please contact your respective college's OCS. If all details shown here are correct, you may proceed to the Pre-enlisment Page by clicking the link on the menu bar.</p>
+                        </div>
+
+                        <div class="profile-card">
+                            <div class="profileyellow-container">
+                                <div class="profilep">
+                                    <p><span class="profile-red">Student No </span>: 2022-26087</p>
+                                    <p><span class="profile-red">Last Name</span> : Doe</p>
+                                    <p><span class="profile-red">First Name</span> : John</p>
+                                    <p><span class="profile-red">Middle Name</span> : Cruz</p>
+                                    <p><span class="profile-red">Pedigree </span>: None</p>
+                                    <p><span  class="profile-red">Gender</span> : Male</p>
+                                    <p><span class="profile-red">Civil Status</span> : No Data</p>
+                                    <p><span class="profile-red">Country of Citizenship</span> : Philippines</p>
+                                    <p><span class="profile-red">Student Type</span> : Old</p>
+                                    <p><span class="profile-red">Registration Status </span>: Regular</p>
+                                    <p><span class="profile-red">Degree Program</span> : Bachelor of Science in Information Technology</p>
+                                    <p><span class="profile-red">Year Level</span> : 1</p>
+                                    <p><span class="profile-red">Official PLM Email </span>: jdc2022@plm.edu.ph</p>
+                                    <p><span class="profile-red">Personal Email</span> : JohnDoe@gmail.com</p>
+                                    <p><span class="profile-red">Mobile Number </span>: 091234567810</p>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+        <div id="grades" class="tab-content">
+            <div class="divgradeinfo">
+                <p><span class="grade-red">Student No: </span> 1234567</p>
+                <p><span class="grade-red">Name: </span> Doe, John Cruz</p>
+            </div>
+
+            <div class="grade-form">
+                <div class="text">
+                    <p>AYSEM(eg.20221): </p> 
+                </div>
+                <form>
+                    <input type="text">
+                    <button type="submit">Submit</button>
+                  </form>
+            </div>
+
+            <div class="grades-container">
+            <div class="label-container">
+                <h1>Student Grades</h1>
+            </div>
+            <table>
+                <tr>
+                  <th>Subject Code-Section</th>
+                  <th>Subject Title</th>
+                  <th>Units</th>
+                  <th>Grades</th>
+                  <th>Completion <br> Grade</th>
+                  <th>Units</th>
+                </tr>
+                <tr>
+                  <td class="bg">CET 0111-1</td>
+                  <td class="bg">Calculus 1</td>
+                  <td class="bg">3</td>
+                  <td class="bg">1</td>
+                  <td class="bg"></td>
+                  <td class="bg">PASSED</td>
+                </tr>
+                <tr>
+                  <td>CET 0114-1</td>
+                  <td>General Chemistry (Lec)</td>
+                  <td>3</td>
+                  <td>2.25</td>
+                  <td></td>
+                  <td>PASSED</td>
+                </tr>
+                <tr>
+                  <td class="bg">CET 0114.1-1</td>
+                  <td class="bg">General Chemistry (Lab)</td>
+                  <td class="bg">1</td>
+                  <td class="bg">1</td>
+                  <td class="bg"></td>
+                  <td class="bg">PASSED</td>
+                </tr>
+                <tr>
+                  <td>EIT 0121-1</td>
+                  <td>Introduction to Computer Human Interaction (Lec)</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td></td>
+                  <td>PASSED</td>
+                </tr>
+                <tr>
+                  <td class="bg">EIT 0121.1A-1</td>
+                  <td class="bg">Introduction to Computer Human Interaction (Lab)</td>
+                  <td class="bg">1</td>
+                  <td class="bg">1</td>
+                  <td class="bg"></td>
+                  <td class="bg">PASSED</td>
+                </tr>
+                <tr>
+                  <td>EIT 0122-1</td>
+                  <td>Discrete Mathematics</td>
+                  <td>3</td>
+                  <td>1.25</td>
+                  <td></td>
+                  <td>PASSED</td>
+                </tr>
+                <tr>
+                  <td class="bg">EIT 0123-1</td>
+                  <td class="bg">Web System Technology (Lec)</td>
+                  <td class="bg">2</td>
+                  <td class="bg">1.25</td>
+                  <td class="bg"></td>
+                  <td class="bg">PASSED</td>
+                </tr>
+                <tr>
+                    <td>EIT 0123.1-1</td>
+                    <td>Web Systems Technology (lab)</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>PASSED</td>
+                  </tr>
+                <tr>
+                    <td class="bg">GTB 121-7</td>
+                    <td class="bg">Great Books</td>
+                    <td class="bg">3</td>
+                    <td class="bg">1.25</td>
+                    <td class="bg"></td>
+                    <td class="bg">PASSED</td>
+                </tr>
+                <tr>
+                    <td>ICC 0103</td>
+                    <td>Intermidiate Programming (lec)</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td></td>
+                    <td>PASSED</td>
+                </tr>
+                <tr>
+                    <td class="bg">ICC 0103.1</td>
+                    <td class="bg">Intermidiate Programming (lab)</td>
+                    <td class="bg">1</td>
+                    <td class="bg">1</td>
+                    <td class="bg"></td>
+                    <td class="bg">PASSED</td>
+                </tr>
+                <tr>
+                    <td>NSTP4-9</td>
+                    <td>National Service Training Program 2 - (Civic Welfare Trainig Service 2)</td>
+                    <td>3</td>
+                    <td>1.75</td>
+                    <td></td>
+                    <td>PASSED</td>
+                </tr>
+                <tr>
+                    <td class="bg">PATHFIT 2-46</td>
+                    <td class="bg">Physical Activities Towards Health and Fitnedd 2 (Exercise-based Fitness Activities)</td>
+                    <td class="bg">3</td>
+                    <td class="bg">1</td>
+                    <td class="bg"></td>
+                    <td class="bg">PASSED</td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="centered">GWA : 1.23</td>
+                  </tr>
+              </table>
+            </div>
+        </div>
+       
+          
+        </div>
+
+          
+
+        <div id="password" class="tab-content">
+            <div class="passmain-container">
+                <div class="passred-container">
+                    <div class="pass-flex">
+                        <div class="pass-card">
+                            <h2>Change Your Password Pasility</h2>
+                            <p class="pass-main-text">You can now personalize your user password to make it easier for you to remember. However, you should ensure that it is not too easy for anyone else to guess!
+                                <br><br>
+                                <span class="pass-yel-span">Your password must be at least 8-20 characters long only.</span> Making your password difficult for anyone else to crack will secure your CRS data. <span class="pass-yel-span" >Choosing Good Passwords</span></p>
+                        </div>
+
+                        <div class="pass-card">
+                            <div class="passyellow-container">
+                                <div class="passp">
+                                    <h3>Student Number: 1234567</h3>
+                                    
+                                    <div class="pass-text">
+                                        <p class="ap">Current Password: </p> 
+                                        <p class="bp">New Password: </p> 
+                                        <p class="cp">Confirm Password: </p> 
+                                    </div>
+
+                                    <div class="pass-form">
+                                        <form>
+                                            <input class="a" type="text">
+                                            <input  class="b" type="text">
+                                            <input class="c" type="text">
+                                            <div class="updatepass"><button class="pass-submit" type="submit">Update Password</button></div>
+                                        </form>
+                                    </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var sidebarLinks = document.querySelectorAll('.sidebar a');
+            var tabContents = document.querySelectorAll('.tab-content');
+    
+            sidebarLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+    
+                    var target = this.getAttribute('href').substring(1);
+    
+                    tabContents.forEach(function(content) {
+                        content.classList.remove('active');
+                    });
+    
+                    document.getElementById(target).classList.add('active');
+    
+                    sidebarLinks.forEach(function(link) {
+                        link.classList.remove('active');
+                    });
+    
+                    this.classList.add('active');
+                });
+            });
+    
+            var dateElement = document.getElementById('date');
+            var currentDate = new Date();
+    
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var formattedDate = currentDate.toLocaleDateString(undefined, options);
+    
+            dateElement.textContent = formattedDate;
+    
+            // Event listener for the back button
+            var backButton = document.getElementById('back');
+            backButton.addEventListener('click', function() {
+                window.location.href = "home.html";
+            });
+    
+            // Event listener for the logout button
+            var logoutButton = document.getElementById('logout');
+            logoutButton.addEventListener('click', function() {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+      
+</body>
+</html>
